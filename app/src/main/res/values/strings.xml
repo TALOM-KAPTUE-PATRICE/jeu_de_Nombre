@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">JEU MYSTERIEUX</string>
+    <string-array name="difficulty_levels">
+        <item>Facile(1-100)</item>
+        <item>Normal(1-1000)</item>
+        <item>Difficile(1-10000)</item>
+    </string-array>
+</resources>

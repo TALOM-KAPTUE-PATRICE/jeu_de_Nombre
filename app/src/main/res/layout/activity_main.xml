@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gris"
+    tools:context=".MainActivity">
+<ImageView
+    android:layout_width="400px"
+    android:layout_height="90dp"
+    android:layout_marginTop="20dp"
+    android:layout_gravity="center"
+   android:src="@drawable/jeu2"/>
+
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text=" \t \t Bienvenue sur JEU MYSTERIEUX, \n \n Tentez de trouver le nombre mystere le \t \t plus vite possible.\n \n \t Choisissez un niveau de difficulté :"
+       android:textSize="18sp"
+       android:textColor="@color/blue"
+       android:layout_gravity="center"
+       android:textStyle="bold"
+       android:layout_marginLeft="8dp"
+       android:layout_marginTop="30dp"
+       android:layout_marginBottom="16dp"/>
+
+   <Spinner
+       android:id="@+id/difficulty_spinner"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textAlignment="center"
+       android:layout_marginBottom="16dp"
+       android:entries="@array/difficulty_levels" />
+
+   <EditText
+       android:id="@+id/guess_input"
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:textStyle="bold"
+       android:textColor="@color/black"
+       android:inputType="number"
+       android:layout_marginLeft="10dp"
+       android:background="@drawable/arrondi"
+       android:layout_marginBottom="50dp"
+       android:hint="Entrer un nombre pour commencer le jeu"
+       />
+
+   <Button
+       android:id="@+id/submit_button"
+       android:layout_width="250dp"
+       android:background="@drawable/btn"
+       android:textSize="14dp"
+       android:layout_gravity="center"
+       android:layout_height="wrap_content"
+       android:text="Soumettre" />
+
+   <TextView
+       android:id="@+id/result_text"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="16dp"
+       android:textStyle="italic"
+       android:layout_gravity="center"
+       android:textColor="@color/vert_fonce"
+       android:textSize="18sp" />
+
+   <Button
+       android:id="@+id/show_number_button"
+       android:layout_width="250dp"
+       android:background="@drawable/btn"
+       android:textSize="14dp"
+       android:layout_gravity="center"
+       android:layout_height="wrap_content"
+       android:text="Afficher le nombre" />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+      android:layout_gravity="center"
+       android:layout_marginTop="10dp"
+       android:textStyle="bold"
+      android:text="Copyright@2024. \n By TALOM Patrice "/>
+
+
+</LinearLayout>
